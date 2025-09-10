@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            margin: auto;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="date"],
+        input[type="time"],
+        input[type="text"],
+
+        select {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+	         <h2>Book Your Ticket</h2>
+        <form action="#" method="post">
+            <label for="name"> Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="name"> Surname:</label>
+            <input type="text" id="name" name="name" required>
+            <legend><b>Select Your Gender:</b></legend>
+
+            <input type="radio" id="male" name="gender" value="male">
+            Male<label for="male"></label>
+
+            <input type="radio" id="female" name="gender" value="female">
+            Female<label for="female"></label>
+
+            <input type="radio" id="Others" name="gender" value="Others">
+            OTHERS<label for="male"></label>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="service">Service:</label>
+            <select id="service" name="service" required>
+                <option value="">Select a service</option>
+                <option value="consultation">First Class</option>
+                <option value="meeting">Business</option>
+                <option value="workshop">Economy</option>
+            </select>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" required >
+
+            <b><input type="submit" value="Book Now" onclick="window.location.href='booked.html'"></b>
+        </form>
+    </div>
+</body>
+</html>

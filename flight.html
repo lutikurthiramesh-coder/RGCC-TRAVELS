@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Booking</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file for styling -->
+</head>
+<body>
+    <div class="container">
+        <h1>Flight Booking</h1>
+        <form action="#" method="POST"> <!-- The 'action' attribute would point to your backend script -->
+            <fieldset>
+                <legend><h3>Flight Details</h3></legend>
+                <label for="origin">Origin:</label><br><br>
+                <input type="text" id="origin" name="origin " required><br><br>
+
+                <label for="destination">Destination:</label><br><br>
+                <input type="text" id="destination" name="destination " required><br><br>
+
+                <label for="departure-date">Departure Date:</label><br><br>
+                <input type="date" id="departure-date" name="departure_date" required><br><br>
+
+                <label for="return-date">Return Date(optional):</label><br><br>
+                <input type="date" id="return-date" name="return_date"><br><br>
+
+                <label for="passengers">Number of Passengers:</label><br>
+                <input type="number" id="passengers" name="passengers" min="1" value="1" required><br><br>
+                 <input type="submit" value="Book Now" button type="button" onclick="window.location.href='booking.html'" >
+                
+            </fieldset>
+ <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            margin: auto;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="date"],
+        input[type="time"],
+        select {
+            width: calc(100% - 22px); /* Adjust for padding and border */
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box; /* Include padding and border in the element's total width and height */
+        }
+        input[type="submit"] {
+            background-color: yellow;
+            color: dark blue;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+        }
+        input[type="submit"]:hover {
+            background-color: yellow;
+        }
+    </style>
+
+
+       </form>
+   <div class="background-img">
+<div class="ticket-section">
+    <form id="ticket-form">
+       
+</body>
+</html>
